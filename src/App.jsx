@@ -7,6 +7,7 @@ import EventsHistory from "./components/EventsHistory";
 import Notifications from "./components/Notifications";
 import OverviewCards from "./components/OverviewCards";
 import Carousel from "./components/Carousel";
+import CarouselAndChart from "./components/CarouselAndChart";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,7 +27,7 @@ function App() {
       <div className="main-content">
         <Header />
         <OverviewCards />
-        <Chart />
+        <CarouselAndChart/>
         <EventsHistory />
         {/* Modal for Event Details */}
         {selectedEvent && (

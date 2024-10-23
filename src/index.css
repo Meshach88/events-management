@@ -275,6 +275,66 @@ events-history table {
   padding: 40px;
 }
 
+/* Container for the carousel and chart */
+.container {
+  display: flex;
+  justify-content:left; /* Ensures both items stay side-by-side */
+  gap: 20px; /* Space between the carousel and chart */
+  margin: 20px auto;
+  max-width: 1200px; /* Adjust width as needed */
+}
+
+/* Chart styles */
+.chart {
+  flex: 1; /* Adjust the width proportionately */
+  max-width: 45%; /* Takes 55% of the available space */
+  margin-top: 2px;
+  margin-bottom: 20px;  
+  border: solid 1px #F2F2F7;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+/* Carousel styles */
+.carousel {
+  flex: 1; /* Adjust the width proportionately */
+  max-width: 45%; /* Takes 45% of the available space */
+  margin-top: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+/* Carousel slide content (optional styling) */
+.slide-content {
+  position: relative;
+}
+
+.slide-content .slide-content-text{
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.slide-content-text h3{
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack carousel and chart vertically on smaller screens */
+  }
+
+  .carousel, .chart {
+    max-width: 100%; /* Full width on mobile */
+  }
+}
 
 
 .dark-mode {
