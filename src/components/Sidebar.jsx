@@ -13,7 +13,7 @@ import { assets } from "../assets";
 function Sidebar({ toggleDarkMode, isDarkMode, setIsDarkMode }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [activeItem, setActiveItem] = useState("Home"); // Default active item is 'Home'
-  const [notificationCount, setNotificationCount] = useState(5);
+  const [notificationCount, setNotificationCount] = useState(3);
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName); // Set the active item when clicked

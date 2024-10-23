@@ -57,7 +57,7 @@
 
 .sidebar ul li {
   list-style: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #334155;
   font-weight: 400;
   line-height: 20px;
@@ -88,7 +88,7 @@
 }
 
 .sidebar .profile .profile-info {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: #334155;
 }
@@ -173,7 +173,7 @@ events-history table {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   color: #334155;
 }
 
@@ -351,7 +351,7 @@ events-history table {
   display: flex;
   align-items: center;
   padding: 8px;
-  font-size: 14px;
+  font-size: 12px;
   color: #334155;
 }
 
