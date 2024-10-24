@@ -132,7 +132,7 @@
   color: white;
   padding: 2px 8px;
   border-radius: 50%;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   display: inline-block;
   width: 24px;
@@ -150,17 +150,6 @@
 .main-content {
   flex: 1;
   padding: 20px;
-}
-
-events-history table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.events-history th,
-.events-history td {
-  border: 1px solid #ddd;
-  padding: 8px;
 }
 
 .notifications {
