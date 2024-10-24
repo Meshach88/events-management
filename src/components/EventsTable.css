@@ -4,6 +4,14 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    max-width: 1076px;
+  }
+
+  .events-table h3{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 10px;
   }
   
   .filter-row {
@@ -28,15 +36,15 @@
   
   .filter-row .export-btn {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
+    background-color: transparent;
+    color: #141414;
+    border: solid 1px #E2E8F0;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .filter-row .export-btn:hover {
-    background-color: #0056b3;
+    background-color: #c9d7e6;
   }
   
   table {
@@ -48,11 +56,18 @@
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #f1f1f1;
+    color: #334155;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
   }
   
   th {
     background-color: #f1f1f1;
-    font-weight: bold;
+    color: #64748B;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
   }
   
   tr:hover {
@@ -63,15 +78,18 @@
     padding: 5px 10px;
     border-radius: 12px;
     font-size: 12px;
-    color: #fff;
+    color: #10B981;
+    line-height: 16px;
+    font-weight: 400;
   }
   
   .status.completed {
-    background-color: #28a745;
+    background-color: #D1FAE5;
   }
   
   .status.inprogress {
-    background-color: #ffc107;
+    background-color: #DBEAFE;
+    color: #3B82F6;
   }
   
   .pagination {
@@ -97,9 +115,18 @@
   .pagination-buttons button {
     padding: 5px 10px;
     margin-right: 5px;
-    border: 1px solid #ccc;
+    border: none;
     background-color: #f8f8f8;
     cursor: pointer;
+  }
+
+  .pagination-buttons .page{
+    border-radius: 50%;
+  }
+
+  .pagination-buttons .active{
+    background-color: #8576FF;
+    color: white;
   }
   
   .pagination-buttons button:hover {
@@ -109,6 +136,11 @@
   .pagination-buttons button:disabled {
     cursor: not-allowed;
     background-color: #ddd;
+  }
+
+  .pagination-select {
+    border: solid 1px #E2E8F0;
+    padding: 8px;
   }
   
   /* Mobile Responsive Styles */
