@@ -66,6 +66,9 @@
   padding: 8px;
   cursor: pointer;
 }
+.sidebar.dark-mode ul li{
+  color: white;
+}
 
 .sidebar ul li.active,
 .sidebar ul li.active div {
@@ -77,6 +80,7 @@
   font-size: 20px;
   color: #ada9bb;
 }
+
 
 .sidebar .profile {
   display: flex;
@@ -91,6 +95,10 @@
   font-size: 12px;
   font-weight: 400;
   color: #334155;
+}
+
+.sidebar.dark-mode .profile .profile-info {
+  color: white;
 }
 
 .sidebar .profile-info-email {
@@ -164,6 +172,10 @@
   cursor: pointer;
   font-size: 14px;
   color: #334155;
+}
+
+.sidebar.dark-mode .collapse-toggle-btn {
+  color: white;
 }
 
 .collapse-toggle-btn div {
@@ -328,7 +340,7 @@
 
 
 .dark-mode {
-  background-color: #121212;
+  background-color: #484554;
   color: #fff;
 }
 
@@ -343,6 +355,10 @@
   padding: 8px;
   font-size: 12px;
   color: #334155;
+}
+
+.sidebar.dark-mode .dark-mode-toggle{
+  color: white;
 }
 
 .switch {
@@ -399,7 +415,7 @@ input:checked + .slider:before {
 }
 
 /* Media Queries for Mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .sidebar {
     position: absolute;
     width: 60px;
@@ -415,5 +431,141 @@ input:checked + .slider:before {
 
   .chart-container {
     height: 300px;
+  }
+} */
+/* Base styles for mobile devices */
+@media only screen and (max-width: 768px) {
+  /* Make the sidebar collapsible into a hamburger menu */
+  .sidebar {
+    width: 60px;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  /* Collapsed sidebar icon-only display */
+  .sidebar.collapsed {
+    width: 60px;
+  }
+
+  /* Sidebar icons display when collapsed */
+  .sidebar li {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  /* Hide sidebar item labels */
+  .sidebar li span {
+    display: none;
+  }
+
+  /* Dashboard Overview Cards */
+  .overview-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  /* Each card responsive design */
+  .card {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  /* Chart and Carousel section side by side on larger screens */
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Responsive Chart */
+  .chart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Responsive Carousel */
+  .carousel {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Pagination and Filter dropdowns
+  .filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  /* Search bar responsive */
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  /* Pagination controls */
+  .pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  /* The table should scroll horizontally if necessary */
+  .events-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .events-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .events-table th, .events-table td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Make pagination controls more compact */
+  .pagination-controls select, .pagination-controls button {
+    padding: 5px;
+  } */
+
+  /* Styling for the carousel dots as dashes */
+  .slick-dots li button:before {
+    color: #fff;
+    content: '—'; /* Use dash instead of dot */
+    font-size: 18px;
+  }
+
+  .slick-dots {
+    bottom: 10px; /* Position dots closer to the slide */
+  }
+
+  /* Carousel Arrows on the Slides */
+  .slick-prev, .slick-next {
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 5px;
   }
 }
