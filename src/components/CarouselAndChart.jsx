@@ -38,7 +38,7 @@ const options = {
   },
 };
 
-const CarouselAndChart = () => {
+const CarouselAndChart = ({isDarkMode}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -55,7 +55,7 @@ const CarouselAndChart = () => {
       <h3 className="chart-title">Event Registrations per month</h3>
       <div className="container">
         {/* Chart */}
-        <div className="chart">
+        <div className={`chart ${isDarkMode ? "dark-mode-sidebar" : "light-mode"}`}>
           <Chart type="bar" data={data} options={options} />
         </div>
 

@@ -2,7 +2,7 @@
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { GoArrowUpRight, GoArrowDownRight } from "react-icons/go";
 
-function OverviewCards() {
+function OverviewCards({isDarkMode}) {
   const stats = [
     { title: "Total Events", value: "100,000", change: "+5.0%" },
     { title: "Active Speakers", value: "25", change: "-5.0%" },
@@ -13,7 +13,7 @@ function OverviewCards() {
   return (
     <div className="overview-cards">
       {stats.map((stat, index) => (
-        <div className="card" key={index}>
+        <div className={`card ${isDarkMode ? "dark-mode-sidebar" : "light-mode"}`} key={index}>
           <div className="card-title">
             <h3>{stat.title}</h3>
             <IoMdInformationCircleOutline className="card-info" />

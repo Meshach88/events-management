@@ -147,7 +147,7 @@ const initialData = [
   },
 ];
 
-const EventsTable = () => {
+const EventsTable = ({isDarkMode}) => {
   const [events, setEvents] = useState(initialData);
   const [filters, setFilters] = useState({
     date: "",
@@ -218,13 +218,14 @@ const EventsTable = () => {
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-  };
+  }; 
 
   return (
-    <div className="events-table">
+    <div className={`events-table ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       <h3>Events History</h3>
-      <div className="filter-row">
+      <div className= "filter-row">
         <input
+        className={`${isDarkMode ? "dark-mode-sidebar" : ""}`}
           type="text"
           name="name"
           placeholder="Search..."
@@ -314,14 +315,14 @@ const EventsTable = () => {
           </button>
           <button
             className="page"
-            onClick={() => handlePageChange(1)}
+            onClick={() => handlePageChange(2)}
             disabled={currentPage === 2}
           >
             2
           </button>
           <button
             className="page"
-            onClick={() => handlePageChange(1)}
+            onClick={() => handlePageChange(3)}
             disabled={currentPage === 3}
           >
             3
@@ -331,7 +332,7 @@ const EventsTable = () => {
           </button> */}
           <button
             onClick={() => handlePageChange(currentPage + 1)}
-            // disabled={currentPage === totalPages}
+            disabled={currentPage === totalPages}
           >
             <GrFormNext />
           </button>

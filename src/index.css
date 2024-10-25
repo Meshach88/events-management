@@ -66,7 +66,7 @@
   padding: 8px;
   cursor: pointer;
 }
-.sidebar.dark-mode ul li{
+.sidebar.dark-mode-sidebar ul li{
   color: white;
 }
 
@@ -97,7 +97,7 @@
   color: #334155;
 }
 
-.sidebar.dark-mode .profile .profile-info {
+.sidebar.dark-mode-sidebar .profile .profile-info {
   color: white;
 }
 
@@ -120,6 +120,10 @@
 
 .sidebar.collapsed ul li div {
   color: #334155;
+}
+
+.sidebar.collapsed.dark-mode-sidebar ul li div{
+  color: white;
 }
 
 .sidebar.collapsed ul li.active div {
@@ -174,7 +178,7 @@
   color: #334155;
 }
 
-.sidebar.dark-mode .collapse-toggle-btn {
+.sidebar.dark-mode-sidebar .collapse-toggle-btn {
   color: white;
 }
 
@@ -202,6 +206,7 @@
 
 .card {
   background: #fff;
+  color: #64748B;
   padding: 16px;
   border: solid 1px #F2F2F7;
   border-radius: 2px;
@@ -214,11 +219,14 @@
   gap: 4px;
   margin-bottom: 6px;
 }
-
+ 
 .card-info{
-  color: #64748B;
   font-size: 14px;
   margin-top: 6px;
+}
+
+.dark-mode-sidebar .card-info {
+  color: white;
 }
 
 .card h3{
@@ -227,6 +235,11 @@
   line-height: 24px;
   color: #64748B;
 }
+
+.dark-mode-sidebar .card-title h3 {
+  color: white;
+}
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -243,6 +256,10 @@
   font-weight: 600;
   line-height: 32px;
   color: #334155;
+}
+
+.dark-mode-sidebar .stat p{
+  color: white;
 }
 
 .stat-green {
@@ -267,14 +284,14 @@
   line-height: 12px;
 }
 
-.chart-container {
+/* .chart-container {
   height: 400px;
   width: 50%;
   margin: 20px 0;
   border: solid 1px #F2F2F7;
   border-radius: 5px;
   padding: 40px;
-}
+} */
 
 /* Container for the carousel and chart */
 .container {
@@ -341,7 +358,13 @@
 
 .dark-mode {
   background-color: #484554;
+  /* #27262b */
   color: #fff;
+}
+
+.dark-mode-sidebar {
+  background-color: #6A6676;
+  border: none;
 }
 
 .light-mode {
@@ -357,7 +380,7 @@
   color: #334155;
 }
 
-.sidebar.dark-mode .dark-mode-toggle{
+.sidebar.dark-mode-sidebar .dark-mode-toggle{
   color: white;
 }
 

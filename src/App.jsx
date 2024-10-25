@@ -26,16 +26,14 @@ function App() {
       />
       <div className="main-content">
         <Header />
-        <OverviewCards />
-        <CarouselAndChart/>
-        <EventsHistory />
+        <OverviewCards isDarkMode={isDarkMode}/>
+        <CarouselAndChart isDarkMode={isDarkMode}/>
+        <EventsHistory isDarkMode={isDarkMode}/>
         {/* Modal for Event Details */}
         {selectedEvent && (
           <Modal event={selectedEvent} closeModal={closeModal} />
         )}
-        {/* <Carousel/> */}
       </div>
-      {/* <Notifications /> */}
     </div>
   );
 }

@@ -20,7 +20,7 @@ function Sidebar({ toggleDarkMode, isDarkMode, setIsDarkMode }) {
   };
 
   return (
-    <div className={`sidebar ${isCollapsed ? "collapsed" : ""} ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+    <div className={`sidebar ${isCollapsed ? "collapsed" : ""} ${isDarkMode ? "dark-mode-sidebar" : "light-mode"}`}>
       <ul>
         <div className="logo-container">
           <div className="logo-box">
