@@ -313,6 +313,35 @@
   position: relative;
 }
 
+.slick-dots li button:before {
+  color: #fff;
+  content: '—'; /* Use dash instead of dot */
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px; /* Position dots closer to the slide */
+}
+
+/* Carousel Arrows on the Slides */
+.slick-prev, .slick-next {
+  z-index: 1;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.slick-prev {
+  left: 5px;
+}
+
+.slick-next {
+  right: 44px;
+}
+
 /* Carousel slide content (optional styling) */
 .slide-content {
   position: relative;
