@@ -225,7 +225,7 @@ const EventsTable = ({isDarkMode}) => {
       <h3>Events History</h3>
       <div className= "filter-row">
         <input
-        className={`${isDarkMode ? "dark-mode-sidebar" : ""}`}
+        className={`${isDarkMode ? "dark-mode-table" : ""}`}
           type="text"
           name="name"
           placeholder="Search..."
@@ -233,12 +233,14 @@ const EventsTable = ({isDarkMode}) => {
           onChange={handleInputChange}
         />
         <input
+         className={`${isDarkMode ? "dark-mode-table" : ""}`}
           type="date"
           name="date"
           value={filters.date}
           onChange={handleInputChange}
         />
         <select
+          className={`${isDarkMode ? "dark-mode-table" : ""}`}
           name="status"
           value={filters.status}
           onChange={handleInputChange}
@@ -249,11 +251,11 @@ const EventsTable = ({isDarkMode}) => {
           <option value="In Progress">In Progress</option>
         </select>
         <label htmlFor="">Sort:</label>
-        <select name="sort" value={filters.sort} onChange={handleInputChange}>
+        <select className={`${isDarkMode ? "dark-mode-table" : ""}`} name="sort" value={filters.sort} onChange={handleInputChange}>
           <option value="recent">Most Recent</option>
           <option value="oldest">Oldest</option>
         </select>
-        <button onClick={exportTable} className="export-btn">
+        <button onClick={exportTable} className={`export-btn ${isDarkMode ? "dark-mode-table" : ""}`}>
           <MdOutlineFileDownload
             style={{ marginRight: "8px", fontSize: "16px" }}
           />
@@ -278,13 +280,13 @@ const EventsTable = ({isDarkMode}) => {
                 <td>{event.date}</td>
                 <td>{event.speaker}</td>
                 <td>
-                  <span
+                  <li
                     className={`status ${event.status
                       .replace(" ", "")
                       .toLowerCase()}`}
                   >
                     {event.status}
-                  </span>
+                  </li>
                 </td>
               </tr>
             ))

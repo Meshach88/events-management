@@ -284,15 +284,6 @@
   line-height: 12px;
 }
 
-/* .chart-container {
-  height: 400px;
-  width: 50%;
-  margin: 20px 0;
-  border: solid 1px #F2F2F7;
-  border-radius: 5px;
-  padding: 40px;
-} */
-
 /* Container for the carousel and chart */
 .container {
   display: flex;
@@ -322,7 +313,6 @@
   position: relative;
 }
 
-
 /* Carousel slide content (optional styling) */
 .slide-content {
   position: relative;
@@ -343,18 +333,6 @@
 .slide-content-text h3{
   margin-bottom: 10px;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack carousel and chart vertically on smaller screens */
-  }
-
-  .carousel, .chart {
-    max-width: 100%; /* Full width on mobile */
-  }
-}
-
 
 .dark-mode {
   background-color: #484554;
@@ -437,25 +415,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* Media Queries for Mobile */
-/* @media (max-width: 768px) {
-  .sidebar {
-    position: absolute;
-    width: 60px;
-  }
-
-  .main-content {
-    padding: 10px;
-  }
-
-  .overview-cards {
-    flex-direction: column;
-  }
-
-  .chart-container {
-    height: 300px;
-  }
-} */
 /* Base styles for mobile devices */
 @media only screen and (max-width: 768px) {
   /* Make the sidebar collapsible into a hamburger menu */
@@ -505,7 +464,8 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column; /* Stack on smaller screens */
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
+    width: 750px;
   }
 
   /* Responsive Chart */
@@ -520,15 +480,7 @@ input:checked + .slider:before {
     padding: 10px;
   }
 
-  /* Pagination and Filter dropdowns
-  .filter-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  /* Search bar responsive */
+    /* Search bar responsive */
   .search-bar input {
     width: 100%;
     padding: 8px;
@@ -592,3 +544,5 @@ input:checked + .slider:before {
     right: 5px;
   }
 }
+
+

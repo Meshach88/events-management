@@ -30,7 +30,15 @@
     width: 20%;
   }
 
-  
+  .filter-row .dark-mode-table{
+    border: none;
+    color: white;
+  }
+
+  .filter-row .dark-mode-table::placeholder{
+    color: white;
+  }
+
   
   .filter-row input[type="date"] {
     width: 15%;
@@ -43,6 +51,11 @@
     border: solid 1px #E2E8F0;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .filter-row .export-btn.dark-mode-table {
+    border: none;
+    color: white;
   }
   
   .filter-row .export-btn:hover {
@@ -63,6 +76,12 @@
     line-height: 20px;
     font-weight: 400;
   }
+
+  .dark-mode th, .dark-mode td {
+    background-color: #6A6676;
+    color: white;
+    border: none;
+  }
   
   th {
     background-color: #f1f1f1;
@@ -70,6 +89,11 @@
     font-size: 12px;
     font-weight: 600;
     line-height: 16px;
+  }
+
+ .dark-mode th{
+    background-color: #ADA9BB;
+    color: white;
   }
   
   tr:hover {
@@ -83,15 +107,26 @@
     color: #10B981;
     line-height: 16px;
     font-weight: 400;
+    max-width: 120px;
   }
   
   .status.completed {
     background-color: #D1FAE5;
   }
+
+  .dark-mode .status.completed{
+    background-color: transparent;
+    border: solid 1px #65DDB5;
+  }
   
   .status.inprogress {
     background-color: #DBEAFE;
     color: #3B82F6;
+  }
+
+  .dark-mode .status.inprogress{
+    background-color: transparent;
+    border: solid 1px #77B1FF;
   }
   
   .pagination {
@@ -122,13 +157,27 @@
     cursor: pointer;
   }
 
+  .dark-mode .pagination-buttons button {
+    background-color: #6A6676;
+    color: white;
+  }
+
   .pagination-buttons .page{
     border-radius: 50%;
+  }
+
+  .dark-mode .pagination-buttons .page {
+    background-color: transparent;
+    color: white;
   }
 
   .pagination-buttons .active{
     background-color: #8576FF;
     color: white;
+  }
+
+  .dark-mode .pagination-buttons .active{
+    background-color: #8576FF;
   }
   
   .pagination-buttons button:hover {
@@ -143,8 +192,18 @@
   .pagination-select {
     border: solid 1px #E2E8F0;
     padding: 8px;
-  } 
+  }
+
+  .dark-mode .pagination-select {
+    border: none;
+    background-color: #6A6676;
+    color: white;
+  }
   
+  .dark-mode-table {
+    background-color: #6A6676;
+  }
+
   /* Mobile Responsive Styles */
   @media screen and (max-width: 768px) {
     .filter-row {
