@@ -2,8 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Chart } from "react-chartjs-2"; // Assume you are using Chart.js
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Bar } from 'react-chartjs-2';
 import { assets } from "../assets";
+
+// Register components
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
+
+// Register components
+// const Chart = new Chart
+// Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+
 
 const data = {
   labels: [
@@ -56,7 +65,7 @@ const CarouselAndChart = ({isDarkMode}) => {
       <div className="container">
         {/* Chart */}
         <div className={`chart ${isDarkMode ? "dark-mode-sidebar" : "light-mode"}`}>
-          <Chart type="bar" data={data} options={options} />
+          <Bar className="bar-chart" data={data} options={options} />
         </div>
 
         {/* Carousel */}

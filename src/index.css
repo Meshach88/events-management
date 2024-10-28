@@ -24,13 +24,13 @@
   gap: 8px;
 }
 
-.sidebar .logo-container {
+.logo-container {
   width: 100%;
   margin-left: 10px;
   margin-bottom: 20px;
 }
 
-.sidebar .logo-container .logo-box {
+.logo-container .logo-box {
   background-color: #93c5fd;
   border: 1px solid #2563eb;
   width: 64px;
@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 
-.sidebar .logo-container .logo {
+.logo-container .logo {
   color: #2563eb;
   font-size: 10px;
   font-weight: bold;
@@ -66,7 +66,7 @@
   padding: 8px;
   cursor: pointer;
 }
-.sidebar.dark-mode-sidebar ul li{
+.sidebar.dark-mode-sidebar ul li {
   color: white;
 }
 
@@ -80,7 +80,6 @@
   font-size: 20px;
   color: #ada9bb;
 }
-
 
 .sidebar .profile {
   display: flex;
@@ -122,7 +121,7 @@
   color: #334155;
 }
 
-.sidebar.collapsed.dark-mode-sidebar ul li div{
+.sidebar.collapsed.dark-mode-sidebar ul li div {
   color: white;
 }
 
@@ -139,7 +138,7 @@
   padding: 8px;
 }
 
-.notification-count{
+.notification-count {
   background-color: red;
   color: white;
   padding: 2px 8px;
@@ -150,7 +149,7 @@
   width: 24px;
   text-align: center;
 }
-.sidebar.collapsed .notification-count{
+.sidebar.collapsed .notification-count {
   position: absolute;
   top: 299px;
   width: 8px;
@@ -190,11 +189,19 @@
   margin-left: 10px;
 }
 
-.header{
+.header {
   font-weight: 400;
   font-size: 22px;
   line-height: 20px;
   margin: 10px;
+}
+
+.header-top{
+  display: none;
+}
+
+.header .mobile-menu {
+  display: none;
 }
 
 .overview-cards {
@@ -206,21 +213,21 @@
 
 .card {
   background: #fff;
-  color: #64748B;
+  color: #64748b;
   padding: 16px;
-  border: solid 1px #F2F2F7;
+  border: solid 1px #f2f2f7;
   border-radius: 2px;
   min-width: 260px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card-title{
+.card-title {
   display: flex;
   gap: 4px;
   margin-bottom: 6px;
 }
- 
-.card-info{
+
+.card-info {
   font-size: 14px;
   margin-top: 6px;
 }
@@ -229,17 +236,16 @@
   color: white;
 }
 
-.card h3{
+.card h3 {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  color: #64748B;
+  color: #64748b;
 }
 
 .dark-mode-sidebar .card-title h3 {
   color: white;
 }
-
 
 .card:hover {
   transform: translateY(-5px);
@@ -251,34 +257,34 @@
   gap: 4px;
 }
 
-.stat p{
+.stat p {
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
   color: #334155;
 }
 
-.dark-mode-sidebar .stat p{
+.dark-mode-sidebar .stat p {
   color: white;
 }
 
 .stat-green {
-  color: #10B981;
+  color: #10b981;
   margin-top: 10px;
   font-size: 10px;
   font-weight: 600;
   line-height: 12px;
 }
 
-.stat-red{
-  color: #F43F5E;
+.stat-red {
+  color: #f43f5e;
   margin-top: 10px;
   font-size: 10px;
   font-weight: 600;
   line-height: 12px;
 }
 
-.chart-title{
+.chart-title {
   font-size: 18px;
   font-weight: 500;
   line-height: 12px;
@@ -287,7 +293,7 @@
 /* Container for the carousel and chart */
 .container {
   display: flex;
-  justify-content:left; /* Ensures both items stay side-by-side */
+  justify-content: left; /* Ensures both items stay side-by-side */
   gap: 20px; /* Space between the carousel and chart */
   margin: 20px auto;
   max-width: 1200px; /* Adjust width as needed */
@@ -298,8 +304,8 @@
   flex: 1; /* Adjust the width proportionately */
   max-width: 45%; /* Takes 55% of the available space */
   margin-top: 2px;
-  margin-bottom: 20px;  
-  border: solid 1px #F2F2F7;
+  margin-bottom: 20px;
+  border: solid 1px #f2f2f7;
   border-radius: 5px;
   padding: 40px;
 }
@@ -315,7 +321,7 @@
 
 .slick-dots li button:before {
   color: #fff;
-  content: '—'; /* Use dash instead of dot */
+  content: "—"; /* Use dash instead of dot */
   font-size: 18px;
   font-weight: 800;
 }
@@ -326,7 +332,8 @@
 }
 
 /* Carousel Arrows on the Slides */
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   z-index: 1;
   color: white;
   /* background-color: rgba(0, 0, 0, 0.3); */
@@ -347,7 +354,7 @@
   position: relative;
 }
 
-.slide-content .slide-content-text{
+.slide-content .slide-content-text {
   position: absolute;
   bottom: 10px;
   padding: 20px;
@@ -359,7 +366,7 @@
   margin-right: 10px;
 }
 
-.slide-content-text h3{
+.slide-content-text h3 {
   margin-bottom: 10px;
 }
 
@@ -370,7 +377,7 @@
 }
 
 .dark-mode-sidebar {
-  background-color: #6A6676;
+  background-color: #6a6676;
   border: none;
 }
 
@@ -387,7 +394,7 @@
   color: #334155;
 }
 
-.sidebar.dark-mode-sidebar .dark-mode-toggle{
+.sidebar.dark-mode-sidebar .dark-mode-toggle {
   color: white;
 }
 
@@ -446,27 +453,43 @@ input:checked + .slider:before {
 
 /* Base styles for mobile devices */
 @media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+
+  .header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ada9bb;
+  }
+
+  .header .logo-container {
+    display: block;
+  }
+
+  .header .mobile-menu {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .logo-container .logo-box {
+    width: 64px;
+    height: 32px;
+    /* padding: 2px; */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .logo-container .logo {
+    color: #2563eb;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
   /* Make the sidebar collapsible into a hamburger menu */
   .sidebar {
-    width: 60px;
-    transition: width 0.3s ease-in-out;
-    overflow: hidden;
-  }
-
-  /* Collapsed sidebar icon-only display */
-  .sidebar.collapsed {
-    width: 60px;
-  }
-
-  /* Sidebar icons display when collapsed */
-  .sidebar li {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
-
-  /* Hide sidebar item labels */
-  .sidebar li span {
     display: none;
   }
 
@@ -474,6 +497,7 @@ input:checked + .slider:before {
   .overview-cards {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 10px;
     padding: 0 10px;
   }
@@ -481,97 +505,131 @@ input:checked + .slider:before {
   /* Each card responsive design */
   .card {
     width: 100%;
-    padding: 10px;
+    padding: 16px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-
   /* Chart and Carousel section side by side on larger screens */
   .container {
     display: flex;
     flex-direction: column; /* Stack on smaller screens */
     align-items: center;
-    /* padding: 10px; */
-    width: 750px;
+    width: 90vw;
   }
 
   /* Responsive Chart */
   .chart {
-    width: 100%;
+    flex: 1;
     margin-bottom: 20px;
-  }
+    margin-top: 2px;
+    padding: 10px;
+    max-width: 100%;
+   }
 
-  /* Responsive Carousel */
+   /* Carousel styles */
   .carousel {
+    flex: 1; /* Adjust the width proportionately */
+    max-width: 100%; /* Takes 45% of the available space */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    position: relative;
+  }
+
+  .filter-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter-row input,
+  .filter-row select {
     width: 100%;
-    padding: 10px;
+    margin-bottom: 10px;
   }
 
-    /* Search bar responsive */
-  .search-bar input {
+  .filter-row .export-btn {
     width: 100%;
-    padding: 8px;
-    border-radius: 5px;
   }
 
-  /* Pagination controls */
-  .pagination-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  /* The table should scroll horizontally if necessary */
-  .events-table {
+  table, thead, tbody, th, td, tr {
+    display: block;
     width: 100%;
-    overflow-x: auto;
   }
 
-  .events-table table {
-    width: 100%;
-    border-collapse: collapse;
+  thead {
+    display: none;
   }
 
-  .events-table th, .events-table td {
-    padding: 10px;
+  tr {
+    margin-bottom: 10px;
+  }
+
+  td {
     text-align: left;
+    position: relative;
   }
 
-  /* Make pagination controls more compact */
-  .pagination-controls select, .pagination-controls button {
-    padding: 5px;
-  } */
-
-  /* Styling for the carousel dots as dashes */
-  .slick-dots li button:before {
-    color: #fff;
-    content: '—'; /* Use dash instead of dot */
-    font-size: 18px;
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 10px);
+    text-align: left;
+    font-weight: bold;
   }
 
-  .slick-dots {
-    bottom: 10px; /* Position dots closer to the slide */
+  .pagination {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  /* Carousel Arrows on the Slides */
-  .slick-prev, .slick-next {
-    z-index: 1;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    padding: 5px;
-  }
-  
-  .slick-prev {
-    left: 5px;
+  .pagination span {
+    margin-bottom: 10px;
   }
 
-  .slick-next {
-    right: 5px;
+  .pagination-buttons {
+    margin-bottom: 10px;
   }
 }
 
 
+@media screen and (max-width: 480px) { 
+
+  .filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-row input,
+  .filter-row select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filter-row .export-btn {
+    width: 100%;
+  }
+
+  .pagination {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .pagination-buttons {
+    width: 60%;
+  }
+
+  .pagination-buttons button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .pagination span {
+    display: none;
+  }
+
+  .pagination select {
+    width: 100%;
+  }
+}

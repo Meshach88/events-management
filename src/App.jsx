@@ -2,11 +2,8 @@
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
-import Chart from "./components/Chart";
 import EventsHistory from "./components/EventsHistory";
-import Notifications from "./components/Notifications";
 import OverviewCards from "./components/OverviewCards";
-import Carousel from "./components/Carousel";
 import CarouselAndChart from "./components/CarouselAndChart";
 
 function App() {
